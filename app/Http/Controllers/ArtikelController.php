@@ -18,6 +18,7 @@ class ArtikelController extends Controller
 
     public function store(Request $request) {
         $data = $request->all();
+        $data["slug"] = strtolower(str_replace(" ","-",$data["judul"]));
         unset($data["_token"]);
         $hasil = ArtikelModel::save($data);
         if($hasil){

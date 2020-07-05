@@ -17,9 +17,9 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->string('judul');
             $table->string('isi');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->string('tag');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');

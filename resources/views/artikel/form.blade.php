@@ -13,10 +13,6 @@
         <input type="text" class="form-control" placeholder="Masukkan Isi" name="isi" id="isi">
       </div>
       <div class="form-group">
-        <label for="slug">Slug :</label>
-        <input type="text" class="form-control" placeholder="Masukkan Slug" name="slug" id="slug">
-      </div>
-      <div class="form-group">
         <label for="Tag">Tag :</label>
         <input type="text" class="form-control" placeholder="Masukkan Tag" name="Tag" id="Tag">
       </div>
